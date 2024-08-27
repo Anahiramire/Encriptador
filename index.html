@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encriptador</title>
+        <meta charset="UTF8">
+        <meta name="author" content="Anahí">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+        </header>
+        <main class="main">
+            <h1 class="titulo">Encriptador de Textos</h1>
+            <div class="contenido">
+                <textarea onclick="limpiarIngreseTexto()"; type="text" id="texto" rows="6" cols="100" class="ingresarTexto">Ingrese el texto aquí</textarea>
+                <div class="card" id="elementos" >
+                    <div id="nuevo"class="cardNewText"></div>
+                    <div id="ocultar">
+                        <img  class="cardImage" src="image1.png" alt="Imagen de espera para que se introduzca el texto">
+                        <div class="cardName">Ningún mensaje fue encontrado</div>
+                        <div class="cardText">Ingresa el texto que desees encriptar o desenciptar</div>
+                    </div>
+                </div> 
+            </div> 
+            <section class="botones">
+                <div class="mensaje">
+                    <img class="logoAdvertencia" src="advertencia.png" alt="Logo Advertencia">
+                    <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+                 </div>
+                 <div class="alinearBotones">
+                <button class="botonEjecutar" onclick="limpiarCard()">Encriptar</button>
+                <button class="botonEjecutar" onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">Desarrollado por Anahí Ramírez Rodríguez</footer>
+        <script src="app.js"></script>
+    </body>
+</html>

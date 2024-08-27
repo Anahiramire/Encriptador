@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+.titulo{
+    background-color:#0000;
+    font-size: 40px;
+    padding-bottom: 0%;
+    font-weight: 600;
+}
+.main{
+
+    display: flex;
+    padding: 5% 10% 10% 5%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+    justify-content: space-between;
+}
+.ingresarTexto {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-self:  flex-start;
+    height: 200px;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 22px;
+    margin-top: 10%;
+    gap:20px;
+}
+.card {
+
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 400px;
+    overflow: hidden;
+}
+.cardNewText{
+    font-size: 36px;
+    padding-top: 120px;
+}
+.cardcardImage{
+    width: 100%;
+    height: auto;
+}
+.cardName{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    width: 100%;
+    padding: 0% 0% 5% 0%;
+    margin-top: 0%;
+}
+.mensaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.logoAdvertencia{
+    margin-right: 10px;
+}
+.advertencia{
+    margin: 0;
+    margin-top: 2%; 
+}
+.botonEjecutar {
+    
+    background-color: #1d1d1d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.alinearBotones{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.footer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo {
+        font-size: 30px; 
+    }
+    .ingresarTexto {
+        width: 80%; 
+        align-self: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 2PX;
+        font-size: 18px;
+    }
+    .card {
+        width: 60%; 
+        height: 300px; 
+    }
+    .botones {
+        flex-direction: row; 
+        justify-content: center;
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 5%;
+    }
+    .titulo {
+        font-size: 24px;
+    }
+    .ingresarTexto {
+        width: 80%;
+        font-size: 16px;
+        margin-top: 2%;
+        height: 150px;
+    }
+    .card {
+        width: 80%;
+        height: 250px;
+    }
+    .cardNewText{
+        font-size: 24px;
+        margin-top: 70px;
+        align-items: center;
+        
+    }
+    .botones {
+        flex-direction: column; /* Alinea los botones en columna */
+        width: 100%;
+        padding: 0;
+    }
+}
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 20px; /* Tamaño del título para móviles pequeños */
+        text-align: center;
+    }
+    .ingresarTexto {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 5%;
+        height: 120px;
+    }
+    .card {
+        width: 90%;
+        height: 200px;
+    }
+    .cardNewText{
+        font-size: 24px;
+        margin-top: 70px;
+        align-items: center;
+        
+    }
+    .cardcardImage{
+        width: auto;
+        height: auto;
+    }
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
